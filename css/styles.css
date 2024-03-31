@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem 0rem;
+}
+#logo {
+  width: 35vw;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 2rem;
+}
+
+ul {
+  list-style: none;
+  align-items: flex-end;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  padding-right: 1rem;
+}
+.hero {
+  height: 70vh;
+  display: flex;
+  background-image: url("/assets/img/gallery1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+form {
+  display: flex;
+  align-items: center;
+}
+.search input {
+  display: flex;
+  width: 90vw;
+  height: 4vh;
+  border-radius: 5px;
+  border: none;
+  padding-left: 3%;
+  margin-left: 3%;
+}
+
+.search button {
+  display: flex;
+  font-size: 18px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  margin-left: 3%;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  padding: 3rem 5%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+footer h4 {
+  flex: 3 1 40rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  overflow: auto;
+  flex-direction: row;
+}
+.cards div {
+  width: 30%;
+  height: 100px;
+  margin: 5px;
+  background-color: rgb(91, 91, 91);
+}
+
+/* Media query para tablet */
+@media only screen and (min-width: 770px) {
+}
+
+/* Media query para escritorio */
+@media only screen and (min-width: 1200px) {
+}
