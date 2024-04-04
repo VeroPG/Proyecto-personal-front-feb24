@@ -1,4 +1,10 @@
-* {
+:root {
+  --main-gray: #787878;
+  --light-gray: #c8c8c8;
+  --black: #000;
+  --white: #fff;
+  ---red: #E44848;
+  --dark-red:#6E0B0B;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,7 +18,7 @@ html {
 }
 
 nav {
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -35,14 +41,14 @@ ul {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--black);
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   padding-right: 1rem;
 }
 .hero {
-  height: 70vh;
+  height: 100vh;
   display: flex;
   background-image: url("/assets/img/gallery1.jpg");
   background-repeat: no-repeat;
@@ -59,25 +65,31 @@ form {
 }
 .search input {
   display: flex;
-  width: 90vw;
+  width: 80vw;
   height: 4vh;
+  background-color: var(--light-gray);
   border-radius: 5px;
   border: none;
   padding-left: 3%;
-  margin-left: 3%;
+  margin-left: 2%;
 }
 
 .search button {
   display: flex;
   font-size: 18px;
-  color: white;
+  color: var(--light-gray);
   background-color: transparent;
   border: none;
-  margin-left: 3%;
+  margin-left: 0.5%;
   cursor: pointer;
 }
 .main-text {
-  background-color: rgb(110, 11, 11);
+  display: flex;
+  flex-direction: column;
+  background-color: var(---red);
+  color: var(--white);
+  padding: 5%;
+  
 }
 
 footer {
@@ -107,12 +119,12 @@ footer h4 {
 }
 .card {
   display: flex;
-  align-items: flex-end;
+  justify-content: space-around;
   overflow: hidden;
   padding: 1rem;
   width: 100%;
   text-align: center;
-  color: whitesmoke;
+  color: var(--white);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -139,13 +151,13 @@ footer h4 {
 .btn {
   cursor: pointer;
   margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   font-size: 0.65rem;
   font-weight: bold;
-  letter-spacing: 0.025rem;
+  letter-spacing: 0.10rem;
   text-transform: uppercase;
-  color: white;
-  background-color: black;
+  color: var(--white);
+  background-color: var(--black);
   border: none;
 }
 /*.cards div {
@@ -186,7 +198,7 @@ footer h4 {
   border-radius: 10px;
   padding-top: 30px;
   padding-bottom: 20px;
-  background-color: #fbfbfb;
+  background-color: var(--white);
   padding-left: 30px;
 }
 
@@ -198,11 +210,11 @@ footer h4 {
 }
 
 input {
-  background-color: #fbfbfb;
+  background-color: var(--white);
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-  border-color: #ab4493;
+  border-color: var(--main-gray);
   margin-top: 10px;
   padding-left: 10px;
   margin-bottom: 20px;
@@ -217,7 +229,7 @@ textarea {
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-  border-color: #ab4493;
+  border-color: var(--main-gray);
   margin-top: 10px;
   padding-left: 10px;
   margin-bottom: 20px;
@@ -236,20 +248,21 @@ button {
   padding-right: 5px;
   margin-bottom: 20px;
   margin-top: 10px;
-  background-color: #ab4493;
-  border-color: #ab4493;
+  color:var(--white);
+  background-color: var(--light-gray);
+  border-color: var(--light-gray);
   border-style: solid;
   border-radius: 10px;
   cursor: pointer;
 }
 
 span {
-  color: #ab4493;
+  color: var(--dark-red);
 }
 
 .notice {
   font-size: 13px;
-  color: #0e0e0e;
+  color: var(---red);
 }
 
 /* MEDIA QUERY PARA TABLET */
