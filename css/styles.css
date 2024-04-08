@@ -265,12 +265,33 @@ span {
   width: 70vw;
 }
 
+.card_resoluts:hover{
+  background-color: #0000001f;
+}
+
 .cards_results h4 {
   margin-top: 0.75rem;
   font-size: 1.5rem;
 }
 
+/*  ABOUT STYLES */
+.about_text{
+  padding: 10%;
+  background-color: #c8c8c8;
+}
 
+.about_text h2{
+font-size: 2rem;
+}
+
+.about_text li{
+  font-size: 1.4rem;
+  font-weight: 800;
+  }
+
+.about_text img{
+  width:80vw;
+}
 
 /* MEDIA QUERY PARA TABLET */
 @media only screen and (min-width: 770px) {
@@ -279,5 +300,66 @@ span {
 
 /* MEDIA QUERY PARA ESCRITORIO */
 @media only screen and (min-width: 1200px) {
+  .card {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+    color: var(--white);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+  }
 
+  .cards h2{
+    font-size: 3rem;
+  }
+
+  .cards {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow: auto;
+    flex-direction: row;
+  }
+
+  .btn {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.10rem;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--black);
+    border: none;
+    width: 30vw;
+  }
+
+  .search input {
+    width: 60vw;
+    margin-left: 20vw;
+  }
+
+  .search button {
+    font-size: 1.5rem;
+  }
+
+  .main-text p{
+    font-size: 2rem;
+  }
+
+  .main-text h2{
+    font-size: 3rem;
+    width: 60vw;
+  }
+
+  footer ul {
+    font-size: 2rem;
+  }
 }

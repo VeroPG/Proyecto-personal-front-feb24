@@ -21,7 +21,8 @@ async function fetchAndDisplayData(query) {
   try {
     const response = await fetch(
       `https://api.europeana.eu/record/v2/search.json?query=${query}&wskey=` +
-        key
+        key 
+
     );
     const data = await response.json();
     const resultPage = window.open("pages/result.html", "_blank");
@@ -31,22 +32,13 @@ async function fetchAndDisplayData(query) {
       resultDatacontainer.innerHTML = data.items
         .map(
           (item) => `
-          <div class="cards_results">
-        
-        <img class="card_img" src=${item.edmPreview}>
-  
-        <h4>${item.title[0]}</h4>
-        </div>
-      `
-/*       (item) => `
       <div class="cards_results">
     <a href=${item.guid}>
     <img class="card_img" src=${item.edmPreview}>
     </a>
     <h4>${item.title[0]}</h4>
     </div>
-  ` */
-          
+  `
         )
         .join("");
     });

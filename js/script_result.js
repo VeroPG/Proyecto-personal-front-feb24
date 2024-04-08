@@ -9,15 +9,21 @@ document.addEventListener("DOMContentLoaded", function () {
     dataContainer.innerHTML = europeanaData.items
       .map(
         (item) => `
-      <div class="cards_results">
-        <img class="card_img" src="${item.edmPreview}">
-        <h4>${item.title[0]}</h4>
+        <div class="cards_results">
+      <a href=${item.guid}>
+      <img class="card_img" src=${item.edmPreview}>
+      </a>
+      <h4>${item.title[0]}</h4>
       </div>
-      `
+    `
       )
-      .join(""); // Es importante unir el array de strings en un solo string antes de asignarlo a innerHTML
+      .join(""); //unir el array de strings en un solo string antes de asignarlo a innerHTML
   }
 
+
+
+
+/*   
   // Obtener todas las imágenes pintadas en el contenedor
   const images = document.getElementsByClassName("cards_results");
 
@@ -34,5 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
         imageAlt: "Custom image",
       });
     });
-  }
+  }*/
 });
+ 
